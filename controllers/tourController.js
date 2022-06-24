@@ -39,7 +39,6 @@ exports.aliasTopTours = (req, res, next)=>{
 exports.getAllTours = async (req, res)=>{
 
     try{
-        console.log(req.query)
 
         // //Building query 1A) filtering
         // queryObjs = {...req.query}
