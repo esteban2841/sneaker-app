@@ -1,9 +1,10 @@
 {
-  "name": "natourus-project-with-express",
+  "name": "snickers-store",
   "version": "1.0.0",
-  "description": "learning node.js, express and mongoDB",
+  "description": "Application created by Esteban Puentes made to prove knowledge of backend with express where I am going to create products and business logic to duplicate a snickers store with mock-ups",
   "main": "index.js",
   "scripts": {
+    "tsc":"tsc",
     "start:dev": "nodemon server.js",
     "start:prod": "SET NODE_ENV=production&&nodemon server.js"
   },
@@ -14,7 +15,9 @@
     "express": "^4.18.1",
     "mongoose": "^6.3.4",
     "morgan": "^1.10.0",
-    "slugify": "^1.6.5",
-    "validator": "^13.7.0"
+    "nodemon": "^3.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }

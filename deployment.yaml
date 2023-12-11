@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sneaker-app
+  labels:
+    app: sneaker-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sneaker-app
+  template:
+    metadata:
+      labels:
+        app: sneaker-app
+    spec:
+      containers:
+      - name: sneaker-app
+        image: esteban284/sneaker-app-v1:1.0
+        ports:
+        - containerPort: 4003

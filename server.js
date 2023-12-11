@@ -4,15 +4,16 @@ dotenv.config({path : "./config.env"});
 
 const app = require("./app");
 
-const DB = process.env.DATABASE.replace("<PASSWORD>", process.env.DATABASE_PASSWORD)
-
+const DB = process.env.DATABASE.replace("<PASSWORD>", process.env.DATABASE_PASSWORD )
+dataBaseName = 'sneaker-app'
 mongoose.connect(DB, {
     autoIndex: true,
-    
+    dbName:dataBaseName
 
 }).then(con => {
     con
 })
+
 
 
 const port = process.env.PORT;
